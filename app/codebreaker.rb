@@ -18,10 +18,11 @@ class Codebreaker
       # using the @secret_number
 
       if input.length == 4
-        output.puts "You have the right amount of numbers"
+        output.puts ""
       else
         output.puts "Try guessing a number with four digits"
       end
     end
+
   end
 end
