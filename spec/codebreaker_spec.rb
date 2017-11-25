@@ -44,7 +44,7 @@ RSpec.describe Codebreaker do
         input = '4444'
 
         game.start('1234')
-        expect(output).to_not receive(:puts).with("Try guessing a number with four digits")
+        expect(output).not_to receive(:puts).with("Try guessing a number with four digits")
 
         game.guess(input)
       end
