@@ -22,7 +22,12 @@ class Codebreaker
       else
         output.puts "Try guessing a number with four digits"
       end
-    end
 
+      @secret_number.split("").each do |number|
+        if input.include? number
+          output.puts "-"
+        end
+      end
+    end
   end
 end
