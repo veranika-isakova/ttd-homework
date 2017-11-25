@@ -16,8 +16,8 @@ class Codebreaker
     def guess(input)
       # Make sure to replace next line with the actual implemented marking algorithm,
       # using the @secret_number
-
-      output.puts "you typed '#{input}'"
+  
+      #output.puts "you typed '#{input}'"
     end
   end
 end
