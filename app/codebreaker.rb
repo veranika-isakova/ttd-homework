@@ -16,6 +16,14 @@ class Codebreaker
     def guess(input)
       # Make sure to replace next line with the actual implemented marking algorithm,
       # using the @secret_number
+      @secret_number.split("").each do |number|
+        if input.include? number
+          output.puts "-"
+        end
+        if @secret_number.index(number) == input.index(number)
+          output.puts "+"
+        end
+      end
 
       if input.length == 4
         output.puts ""
@@ -23,11 +31,6 @@ class Codebreaker
         output.puts "Try guessing a number with four digits"
       end
 
-      @secret_number.split("").each do |number|
-        if input.include? number
-          output.puts "-"
-        end
-      end
     end
   end
 end
